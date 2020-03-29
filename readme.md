@@ -74,7 +74,7 @@ mod+s > mod+q
 mod+h > mod+s
 fix navigate vim on focus, resize and move
 
-bindsym mod+F2 exec brave
+bindsym $mod+F2 exec brave
 ```
 
 nitrogen
