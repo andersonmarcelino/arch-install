@@ -50,7 +50,7 @@ sudo localectl set-x11-keymap br abnt2
 
 install aur
 ```
-  pacman -S git go
+  pacman -S git go ssh
   git clone https://aur.archlinux.org/yay.git
   cd yay
   makepkg -si
@@ -84,7 +84,7 @@ shutdown menu
 mode "Exit (l)ock, (L)ogout, (r)eboot, (S)hutdown" {
         bindsym r exec systemctl reboot
         bindsym Shift+L exit
-        bindsym l exec i3lock
+        bindsym l mode "default";exec i3lock;
         bindsym Shift+S exec systemctl poweroff
 
         bindsym Return mode "default"
