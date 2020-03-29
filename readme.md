@@ -1,7 +1,7 @@
 package list
 ```
-pacman -S vim netctl wireless_tools wpa_supplicant \
-          dialog dhcpcd dosfstools mtools sudo \
+pacman -S vim networkmanager network-manager-applet wireless_tools \
+	  wpa_supplicant dialog dhcpcd dosfstools mtools sudo \
           xorg-server xorg-app alacritty man xdotool
 ```
 
@@ -10,9 +10,13 @@ drivers
 pacman -S xf86-video-intel libgl mesa \
           nvidia nvidia-libgl alsa alsa-utils pulseaudio \
           xf86-input-synaptics broadcom-wl-dkms pamixer \
-          nitrogen feh
+          nitrogen feh thunar
 ```
 
+enable services
+```
+systemctl enable NetworkManager
+```
 
 useradd
 ```
