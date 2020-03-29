@@ -1,0 +1,21 @@
+[windowname]
+command=xprop -id $(xdotool getactivewindow) | grep _NET_WM_NAME | cut -d'"' -f2
+interval=1
+
+[volume]
+label=Volume: 
+command=pamixer --get-volume-human
+interval=2
+color=#a6cae2
+
+[batery]
+label=Battery: 
+command=echo $(cat /sys/class/power_supply/BAT0/status) $((100*$(cat /sys/class/power_supply/BAT0/charge_now)/($(cat /sys/class/power_supply/BAT0/charge_full))))%
+interval=10
+color=#ffc68d
+
+[time]
+label= 
+command=date '+%d/%m/%Y %H:%M'
+interval=5
+color=#a3c38b
