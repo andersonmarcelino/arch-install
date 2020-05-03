@@ -1,3 +1,7 @@
+# [WIP] a post install arch linux list
+
+This will become a install arch script in the future
+
 package list
 ```
 pacman -S vim networkmanager network-manager-applet wireless_tools \
@@ -47,7 +51,7 @@ i3blocks
 i3lock
 ```
 
-set keymap 
+set keymap
 ```
 sudo localectl set-x11-keymap br abnt2
 ```
