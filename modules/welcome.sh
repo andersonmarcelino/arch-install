@@ -15,5 +15,5 @@ welcome () {
 EOF
   tput civis
   tput invis
-  read
+  read -s
 }
