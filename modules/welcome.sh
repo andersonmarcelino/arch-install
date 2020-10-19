@@ -8,8 +8,8 @@ welcome () {
     Esse Instalador foi criado por Anderson Marcelino e instala o archlinux com
     os programas personalizados para o uso do mesmo.
 
-    para a instalação, é necessario que o disco onde será instalado esteja vazio,
-    se não for o caso, limpe todas as partições e rode o comando novamente,
+    Essa instalação aira limpar completamente seu disco, e instalar o Arch Linux
+    em todo ele, caso não queira que isso aconteça, interrompa agora mesmo
 
     Para continuar, precione Enter, para sair precione CTRL+C
 EOF
