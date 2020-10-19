@@ -1,4 +1,5 @@
 source './modules/welcome.sh'
+source './modules/test_efi.sh'
 
 ctrl_c() {
   tput reset
@@ -8,5 +9,6 @@ ctrl_c() {
 trap ctrl_c SIGINT
 
 welcome
+test_efi
 
 tput reset
